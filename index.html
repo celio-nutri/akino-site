@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akino Consultoria em Alimentos</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header>
+  <div class="container header-content">
+    <img src="logo.png" alt="Akino Consultoria" class="logo"/>
+    <nav>
+      <a href="#sobre">Quem Somos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#nr1">NR-1</a>
+      <a href="#treinamentos">Treinamentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-content">
+    <h1>Akino Consultoria em Alimentos</h1>
+    <p>Segurança dos Alimentos • Qualidade • Desenvolvimento de Pessoas</p>
+    <a class="btn" href="https://wa.me/5516991778022" target="_blank">Solicitar Orçamento no WhatsApp</a>
+  </div>
+</section>
+
+<section id="sobre" class="section">
+  <div class="container grid">
+    <img src="celio.jpg" alt="Célio Aquino" class="profile"/>
+    <div>
+      <h2>Quem Somos</h2>
+      <h3>Célio Santana de Aquino</h3>
+      <p><strong>Nutricionista | Consultor em Segurança dos Alimentos</strong><br/>
+      CRN-3 nº 40.547<br/>
+      Pós-graduado em Controle de Qualidade dos Alimentos<br/>
+      Estudante de Psicologia</p>
+
+      <p>Atuação em consultoria para serviços de alimentação com foco em segurança dos alimentos, padronização de processos, treinamentos e desenvolvimento de equipes, integrando aspectos técnicos e comportamentais.</p>
+
+      <p>Base em Matão – SP, com atendimento em todo o Estado de São Paulo e serviços remotos para outras capitais, especialmente em rotulagem nutricional e documentação técnica.</p>
+    </div>
+  </div>
+</section>
+
+<section id="servicos" class="section light">
+  <div class="container">
+    <h2>Nossos Serviços</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Segurança dos Alimentos</h3>
+        <ul>
+          <li>Manual de Boas Práticas</li>
+          <li>POPs – Procedimentos Operacionais Padrão</li>
+          <li>Documentação para Vigilância Sanitária</li>
+          <li>Fichas Técnicas e Padronização de Receitas</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Rotulagem Nutricional</h3>
+        <ul>
+          <li>RDC 429/2020 e IN 75/2020</li>
+          <li>Tabela nutricional</li>
+          <li>Ingredientes e alergênicos</li>
+          <li>Atendimento remoto</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Desenvolvimento de Pessoas</h3>
+        <ul>
+          <li>Treinamento de manipuladores (com certificado)</li>
+          <li>Padronização de atendimento (pequenas, médias e grandes empresas)</li>
+          <li>Capacitação de líderes</li>
+          <li>Comunicação e clima organizacional</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="nr1" class="section">
+  <div class="container">
+    <h2>NR-1 – Riscos Psicossociais (PGR)</h2>
+    <p>
+      Apoio técnico na identificação e organização dos riscos psicossociais exigidos pela NR-1, integrando este processo ao Programa de Gerenciamento de Riscos (PGR).
+    </p>
+    <p>
+      A atuação é realizada de forma multidisciplinar, com acompanhamento de psicóloga parceira habilitada, garantindo conformidade técnica e legal.
+    </p>
+  </div>
+</section>
+
+<section id="treinamentos" class="section light">
+  <div class="container">
+    <h2>Treinamentos e Capacitação</h2>
+    <p>Atendimento a restaurantes, padarias, supermercados, cozinhas industriais, açougues e serviços de alimentação em geral.</p>
+
+    <p>Experiência em congressos e eventos científicos, com destaque para premiação em 2012 (2º lugar em melhor trabalho científico) sobre contaminação pelas mãos de manipuladores de alimentos.</p>
+  </div>
+</section>
+
+<section id="contato" class="section">
+  <div class="container contact">
+    <h2>Contato</h2>
+    <p>📍 Matão – SP | Atendimento em todo o Estado de São Paulo</p>
+    <p>💻 Atendimento remoto para outras capitais</p>
+    <p>📲 WhatsApp: (16) 99177-8022</p>
+
+    <a class="btn" href="https://wa.me/5516991778022" target="_blank">Falar com o Consultor</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Akino Consultoria em Alimentos — Nutricionista CRN-3 nº 40.547</p>
+</footer>
+
+</body>
+</html>* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo { height: 60px; }
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #2f6f4f;
+  font-weight: bold;
+}
+
+.hero {
+  background: linear-gradient(rgba(47,111,79,0.85), rgba(47,111,79,0.85)),
+              url('hero.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 { font-size: 42px; }
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #2f6f4f;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.section { padding: 60px 0; }
+
+.section.light { background: #f7f7f7; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.profile {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.contact { text-align: center; }
+
+footer {
+  background: #2f6f4f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akino Consultoria em Alimentos</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header>
+  <div class="container header-content">
+    <img src="img/logo.png" alt="Akino Consultoria" class="logo"/>
+    <nav>
+      <a href="#sobre">Quem Somos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#nr1">NR-1</a>
+      <a href="#treinamentos">Treinamentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-content">
+    <h1>Akino Consultoria em Alimentos</h1>
+    <p>Segurança dos Alimentos • Qualidade • Desenvolvimento de Pessoas</p>
+    <a class="btn" href="https://wa.me/5516991778022" target="_blank">Solicitar Orçamento no WhatsApp</a>
+  </div>
+</section>
+
+<section id="sobre" class="section">
+  <div class="container grid">
+    <img src="img/celio.jpg" alt="Célio Aquino" class="profile"/>
+    <div>
+      <h2>Quem Somos</h2>
+      <h3>Célio Santana de Aquino</h3>
+      <p><strong>Nutricionista | Consultor em Segurança dos Alimentos</strong><br/>
+      CRN-3 nº 40.547<br/>
+      Pós-graduado em Controle de Qualidade dos Alimentos<br/>
+      Estudante de Psicologia</p>
+
+      <p>Atuação em consultoria para serviços de alimentação com foco em segurança dos alimentos, padronização de processos, treinamentos e desenvolvimento de equipes, integrando aspectos técnicos e comportamentais.</p>
+
+      <p>Base em Matão – SP, com atendimento em todo o Estado de São Paulo e serviços remotos para outras capitais, especialmente em rotulagem nutricional e documentação técnica.</p>
+    </div>
+  </div>
+</section>
+
+<section id="servicos" class="section light">
+  <div class="container">
+    <h2>Nossos Serviços</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Segurança dos Alimentos</h3>
+        <ul>
+          <li>Manual de Boas Práticas</li>
+          <li>POPs – Procedimentos Operacionais Padrão</li>
+          <li>Documentação para Vigilância Sanitária</li>
+          <li>Fichas Técnicas e Padronização de Receitas</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Rotulagem Nutricional</h3>
+        <ul>
+          <li>RDC 429/2020 e IN 75/2020</li>
+          <li>Tabela nutricional</li>
+          <li>Ingredientes e alergênicos</li>
+          <li>Atendimento remoto</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Desenvolvimento de Pessoas</h3>
+        <ul>
+          <li>Treinamento de manipuladores (com certificado)</li>
+          <li>Padronização de atendimento (pequenas, médias e grandes empresas)</li>
+          <li>Capacitação de líderes</li>
+          <li>Comunicação e clima organizacional</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="nr1" class="section">
+  <div class="container">
+    <h2>NR-1 – Riscos Psicossociais (PGR)</h2>
+    <p>
+      Apoio técnico na identificação e organização dos riscos psicossociais exigidos pela NR-1, integrando este processo ao Programa de Gerenciamento de Riscos (PGR).
+    </p>
+    <p>
+      A atuação é realizada de forma multidisciplinar, com acompanhamento de psicóloga parceira habilitada, garantindo conformidade técnica e legal.
+    </p>
+  </div>
+</section>
+
+<section id="treinamentos" class="section light">
+  <div class="container">
+    <h2>Treinamentos e Capacitação</h2>
+    <p>Atendimento a restaurantes, padarias, supermercados, cozinhas industriais, açougues e serviços de alimentação em geral.</p>
+
+    <p>Experiência em congressos e eventos científicos, com destaque para premiação em 2012 (2º lugar em melhor trabalho científico) sobre contaminação pelas mãos de manipuladores de alimentos.</p>
+  </div>
+</section>
+
+<section id="contato" class="section">
+  <div class="container contact">
+    <h2>Contato</h2>
+    <p>📍 Matão – SP | Atendimento em todo o Estado de São Paulo</p>
+    <p>💻 Atendimento remoto para outras capitais</p>
+    <p>📲 WhatsApp: (16) 99177-8022</p>
+
+    <a class="btn" href="https://wa.me/5516991778022" target="_blank">Falar com o Consultor</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Akino Consultoria em Alimentos — Nutricionista CRN-3 nº 40.547</p>
+</footer>
+
+</body>
+</html>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo { height: 60px; }
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #2f6f4f;
+  font-weight: bold;
+}
+
+.hero {
+  background: linear-gradient(rgba(47,111,79,0.85), rgba(47,111,79,0.85)),
+              url('img/hero.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 { font-size: 42px; }
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #2f6f4f;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.section { padding: 60px 0; }
+
+.section.light { background: #f7f7f7; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.profile {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.contact { text-align: center; }
+
+footer {
+  background: #2f6f4f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
