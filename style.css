@@ -1,18 +1,29 @@
+/* RESET BÁSICO */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* CONFIGURAÇÕES GERAIS */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #333;
+  line-height: 1.6;
+  background-color: #ffffff;
 }
 
+/* CONTAINER PADRÃO */
 .container {
   max-width: 1100px;
   margin: auto;
   padding: 20px;
+}
+
+/* HEADER */
+header {
+  background-color: #2f5d50;
+  border-bottom: 4px solid #24473d;
 }
 
 .header-content {
@@ -22,27 +33,134 @@ body {
 }
 
 .logo {
-  height: 80px;
+  height: 60px;
+}
+
+nav a {
+  color: #ffffff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(
+      rgba(47, 93, 80, 0.85),
+      rgba(47, 93, 80, 0.85)
+    ),
+    url("img/hero.jpg") center/cover no-repeat;
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* BOTÃO */
+.btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #2f5d50;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #eaeaea;
+}
+
+/* SEÇÕES */
+.section {
+  padding: 70px 20px;
+}
+
+.section.light {
+  background-color: #f4f7f6;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2f5d50;
+}
+
+/* GRID QUEM SOMOS */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: center;
 }
 
 .profile {
-  width: 320px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 280px;
   border-radius: 12px;
   display: block;
-  margin: 0 auto;
+  margin: auto;
 }
 
+/* CARDS SERVIÇOS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  font-weight: bold;
+}
+
+/* CONTATO */
+.contact {
+  text-align: center;
+}
+
+/* FOOTER */
 footer {
-  background: #2f6f4f;
-  color: white;
+  background-color: #2f5d50;
+  color: #ffffff;
   text-align: center;
   padding: 20px;
+  font-size: 14px;
 }
 
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+  }
 
+  nav {
+    margin-top: 15px;
+  }
 
+  .grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 
-    
-
-
+  .hero h1 {
+    font-size: 32px;
+  }
+}
