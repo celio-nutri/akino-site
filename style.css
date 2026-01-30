@@ -7,12 +7,6 @@
 body {
   font-family: Arial, sans-serif;
   color: #333;
-  line-height: 1.6;
-}
-
-header {
-  background: white;
-  border-bottom: 1px solid #ddd;
 }
 
 .container {
@@ -28,77 +22,15 @@ header {
 }
 
 .logo {
-  height: 70px;
+  height: 80px;
 }
 
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #2f6f4f;
-  font-weight: bold;
-}
-
-.hero {
-  background: linear-gradient(rgba(47,111,79,0.85), rgba(47,111,79,0.85));
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.hero h1 {
-  font-size: 42px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  background: #2f6f4f;
-  color: white;
-  padding: 14px 28px;
-  text-decoration: none;
-  border-radius: 6px;
-}
-
-.section {
-  padding: 60px 0;
-}
-
-.section.light {
-  background: #f7f7f7;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
-
-/* FOTO PERFIL */
 .profile {
-  width: 300px;
+  width: 320px;
   max-width: 100%;
-  height: auto;
   border-radius: 12px;
   display: block;
   margin: 0 auto;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-
-.contact {
-  text-align: center;
 }
 
 footer {
@@ -108,8 +40,9 @@ footer {
   padding: 20px;
 }
 
-  
+
 
 
     
+
 
