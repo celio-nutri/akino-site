@@ -212,5 +212,24 @@ header {
   border-radius: 12px;
   display: block;
 }
+/* ===== FORÇAR EXIBIÇÃO DA FOTO ===== */
+#sobre img.profile {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: 220px !important;
+  height: auto !important;
+  max-width: 100% !important;
+  border-radius: 12px;
+}
+
+/* GARANTIR GRID DO QUEM SOMOS */
+#sobre .grid {
+  display: grid !important;
+  grid-template-columns: auto 1fr !important;
+  gap: 30px !important;
+  align-items: center !important;
+}
+
 
 
